@@ -119,7 +119,7 @@ brightBulb.watts
 //: Hint: don't forget to supply a number of gears when you create your bicycles!
 
 class betterBicycle {
-    let numberOfGears: Int
+    let numberOfGears: Double
     var currentGear: Int = 2
     
     func gearUp () {
@@ -157,19 +157,19 @@ var myBicycle = betterBicycle(gears: 20)
 
 
 class Cube: Box {
-    override var depth: Int = 0
+    var depth: Double = 0
     
-    override func area() -> Int {
+    override func area() -> Double {
         return height * width * depth
     }
 }
 
 let lizCube = Cube()
-myCube.depth = 8
-myCube.height = 8
-myCube.width = 8
+lizCube.depth = 8
+lizCube.height = 8
+lizCube.width = 8
 
-myCube.area()
+lizCube.area()
 
 //: DONE!!! - Head back to compass to do today's tutorial.
 
